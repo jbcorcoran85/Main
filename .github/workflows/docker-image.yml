@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: | 
         echo "Hello, Joe!"
-        docker build . --file Dockerfile
+        docker build . --file Dockerfile --tag my-image-name:$(date +%s)
