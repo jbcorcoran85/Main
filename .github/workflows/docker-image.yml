@@ -17,4 +17,6 @@ jobs:
     - name: Build the Docker image
       run: | 
         echo "Hello, Joe!"
-        docker build . --file Dockerfile
+        pwd
+        ls
+        docker build . --file Dockerfile 
