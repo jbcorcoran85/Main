@@ -16,9 +16,11 @@ RUN \
   apt-get install -y software-properties-common && \
   apt-get install -y byobu curl git htop man unzip vim wget && \
   rm -rf /var/lib/apt/lists/*
+  node --version
+  npm install sfdx-cli --global
 
 # Add files.
-ADD root/.bashrc /root/.bashrc
+#ADD root/.bashrc /root/.bashrc
 ADD root/.gitconfig /root/.gitconfig
 ADD root/.scripts /root/.scripts
 
