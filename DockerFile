@@ -20,9 +20,9 @@ RUN \
   npm install sfdx-cli --global
 
 # Add files.
-#ADD root/.bashrc /root/.bashrc
-#ADD root/.gitconfig /root/.gitconfig
-#ADD root/.scripts /root/.scripts
+ADD root/.bashrc /root/.bashrc || true
+ADD root/.gitconfig /root/.gitconfig || true
+ADD root/.scripts /root/.scripts || true
 
 # Set environment variables.
 ENV HOME /root
