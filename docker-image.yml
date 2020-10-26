@@ -19,4 +19,4 @@ jobs:
         echo "Hello, Joe!"
         pwd
         ls
-        docker build . --file Dockerfile 
+        docker build . --file docker-image.yml
