@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Pipeline
 
 on:
   push:
@@ -19,4 +19,6 @@ jobs:
         echo "Hello, Joe!"
         pwd
         ls
-        docker build . --file DockerFile --tag my-image-name:$(date +%s)
+        node --version
+        npm install sfdx-cli --global
+        sfdx --version
